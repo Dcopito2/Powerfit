@@ -50,7 +50,7 @@ public class ProductServiceImpl implements IProductService {
         try {
             /*new product*/
             Product product = productMapper.mapToDto(request);
-            product.setCarrousel(imageService.imagesPost(postImage));
+            //product.setCarrousel(imageService.imagesPost(postImage));
             //product.setCategory(categoryService.getByName(request.getCategory()).toString());
             // add image
             Product pCreated = IProductRepository.save(product);
